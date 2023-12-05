@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "eDiary_ManagementSystem/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "eDiary_ManagementSystem/wsgi.py"
+      }
+    ]
+}
